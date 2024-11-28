@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    to right, 
+    lightpink 0%,             /* Light pink at the start */
+    lightpink 50%,            /* Light pink occupies the first 50% */
+    mediumvioletred 50%,      /* Medium pink starts at 50% */
+    mediumvioletred 80%,      /* Medium pink continues until 80% */
+    rgba(173, 216, 230, 0.5) 80%, /* Transparent light blue starts at 80% */
+    rgba(173, 216, 230, 0.5) 100% /* Transparent light blue fills the last 20% */
+  );
+
+}
+
+.carousel-container {
+  margin: auto;
+  width: 500px; /* Fixed width of carousel */
+  height: 600px; /* Fixed height of carousel */
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  transition: top 0.5s ease-in-out; /* Smooth scrolling */
+}
+
+.card {
+  width: 300px; /* Full width of the carousel */
+  height: 220px; /* Fixed height for each card */
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  background-color: #333;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  opacity: 0.6;
+  background-color: rgb(151, 54, 96);
+  border-radius: 20px;
+  box-shadow: -4px -4px 6px 0 rgba(237, 221, 230, 0.8);
+
+}
+
+.card-content-1 {
+  width: 80%;
+  border-radius: 20px;
+  height: 90px;
+  box-shadow: -4px -4px 6px 0 rgba(237, 221, 230, 0.8);
+  background-color: rgb(224, 128, 169);
+}
+
+.card-content-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.7rem;
+  height: 50px;
+  width: 80%;
+}
+
+.card-sub-content-1 {
+  width: 38px;
+  height: 30px;
+  background-color: white;
+  border-radius: 1.5rem;
+  background-color: rgb(224, 128, 169);
+}
+
+.card-sub-content-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 35px;
+  gap: 0.4rem;
+}
+
+.sub-content-2-sub-1 {
+  width: 100%;
+  height: 20px;
+  background-color: rgb(224, 128, 169);
+  border-radius: 20px;
+}
+
+.sub-content-2-sub-2 {
+  width: 50%;
+  height: 10px;
+  background-color: rgb(224, 128, 169);
+  border-radius: 20px;
+}
+
+/* Styling for the centered card */
+.card.centered {
+  background-color: #555; /* Highlight the centered card */
+  opacity: 0.8;
+  transform: scale(1.2);
+  border-radius: 20px;
+  background-color: rgb(151, 54, 96);
+  box-shadow: 4px -4px 6px -2px rgba(217, 96, 169, 0.2);
+}
+
+/* Optional hover effect for other cards */
+.card:hover {
+  /* background-color: #444;  */
+  cursor: pointer;
+}
